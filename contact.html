@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Syeda Shafia Haider</title>
+  <meta name="description" content="Portfolio of Syeda Shafia Haider - Computer Science Student & Software Engineer. 3D interactive multi-angle studio portfolio." />
+  
+  <!-- Apply saved theme before first paint (no flash between pages) -->
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('shafia_exact_theme')||'dark')}catch(e){}</script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact">
+
+  <!-- ==================== BACKGROUND ENGINE ==================== -->
+  <div id="bg-stage">
+    <!-- Interactive Three.js depth canvas -->
+    <div id="three-canvas"></div>
+
+    <div class="bg-angles-container">
+      <div class="bg-angle-layer active" data-section="contact" style="background-image: url('assets/images/bg-contact-right-profile.jpg');"></div>
+    </div>
+
+    <!-- Lateral Scrim -->
+    <div class="bg-gradient-scrim"></div>
+  </div>
+
+  <!-- ==================== CENTERED PILL NAVIGATION ==================== -->
+  <header class="top-navbar-wrapper">
+    <nav class="nav-pill-container" id="nav-pill-container">
+      <a href="index.html" class="nav-item-link" data-target="home">Home</a>
+      <a href="skills.html" class="nav-item-link" data-target="skills">Skills</a>
+      <a href="projects.html" class="nav-item-link" data-target="projects">Projects</a>
+      <a href="education.html" class="nav-item-link" data-target="education">Education</a>
+      <a href="contact.html" class="nav-item-link active" data-target="contact" aria-current="page">Contact</a>
+      
+      <!-- Theme Switcher Button -->
+      <button class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ==================== PAGE CONTENT ==================== -->
+  <main class="content-wrapper">
+
+    <section class="section-stage" id="contact">
+      <div class="section-head-wrap">
+        <span class="section-mono-tag">05 / CONTACT</span>
+        <h2 class="section-display-title">Get in touch</h2>
+      </div>
+
+      <div class="contact-layout-grid">
+        <div class="contact-info-col">
+          <p style="font-size: 1.05rem; color: var(--text-body); line-height: 1.7;">
+            Have an internship opening, open-source collaboration, or software development project? I'd love to hear from you.
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-bubble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">EMAIL</div>
+                <a href="mailto:syeda.shafia.haider@example.com" style="color: var(--text-headline); font-weight: 600; text-decoration: none;">syeda.shafia.haider@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-bubble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">LOCATION</div>
+                <div style="color: var(--text-headline); font-weight: 600;">Lahore, Pakistan</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-bubble">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">STATUS</div>
+                <div style="color: var(--emerald-mint); font-weight: 600;">Open to internships &amp; collaborations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="tilt-card" style="padding: 2.25rem;">
+          <form class="form-wrapper" id="contact-form">
+            <div class="form-group-item">
+              <label class="form-label-mono">YOUR NAME</label>
+              <input type="text" class="form-input-field" placeholder="e.g. Alex Smith" required />
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-mono">EMAIL ADDRESS</label>
+              <input type="email" class="form-input-field" placeholder="alex@example.com" required />
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-mono">SUBJECT</label>
+              <input type="text" class="form-input-field" placeholder="Internship Opportunity / Inquiry" required />
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-mono">MESSAGE</label>
+              <textarea class="form-textarea-field" placeholder="Hello Syeda Shafia..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-custom btn-custom-primary" style="width: 100%; margin-top: 0.5rem;">
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        &copy; 2026 Syeda Shafia Haider • Computer Science Student &amp; Software Engineer
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--emerald-mint);">
+        "Turning tricky problems into clean, working software."
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Toast -->
+  <div class="toast-msg-box" id="toast-msg-box">
+    Message sent successfully!
+  </div>
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

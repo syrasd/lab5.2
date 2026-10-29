@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Syeda Shafia Haider</title>
+  <meta name="description" content="Portfolio of Syeda Shafia Haider - Computer Science Student & Software Engineer. 3D interactive multi-angle studio portfolio." />
+  
+  <!-- Apply saved theme before first paint (no flash between pages) -->
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('shafia_exact_theme')||'dark')}catch(e){}</script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="projects">
+
+  <!-- ==================== BACKGROUND ENGINE ==================== -->
+  <div id="bg-stage">
+    <!-- Interactive Three.js depth canvas -->
+    <div id="three-canvas"></div>
+
+    <div class="bg-angles-container">
+      <div class="bg-angle-layer active" data-section="projects" style="background-image: url('assets/images/bg-projects-front.jpg');"></div>
+    </div>
+
+    <!-- Lateral Scrim -->
+    <div class="bg-gradient-scrim"></div>
+  </div>
+
+  <!-- ==================== CENTERED PILL NAVIGATION ==================== -->
+  <header class="top-navbar-wrapper">
+    <nav class="nav-pill-container" id="nav-pill-container">
+      <a href="index.html" class="nav-item-link" data-target="home">Home</a>
+      <a href="skills.html" class="nav-item-link" data-target="skills">Skills</a>
+      <a href="projects.html" class="nav-item-link active" data-target="projects" aria-current="page">Projects</a>
+      <a href="education.html" class="nav-item-link" data-target="education">Education</a>
+      <a href="contact.html" class="nav-item-link" data-target="contact">Contact</a>
+      
+      <!-- Theme Switcher Button -->
+      <button class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ==================== PAGE CONTENT ==================== -->
+  <main class="content-wrapper">
+
+    <section class="section-stage" id="projects">
+      <div class="section-head-wrap">
+        <span class="section-mono-tag">02 / PROJECTS</span>
+        <h2 class="section-display-title">Selected work</h2>
+      </div>
+
+      <div class="projects-grid-layout">
+        <!-- AlphaWeb -->
+        <article class="project-card-box tilt-card">
+          <div>
+            <h3 class="proj-title">AlphaWeb</h3>
+            <div class="proj-tags-mono">Java • GUI • OOP</div>
+            <ul class="proj-bullets-list">
+              <li>Problem: Needed to create a fun and engaging word puzzle game.</li>
+              <li>Built an interactive Word Search and Hangman game using Java GUI and Object-Oriented Programming.</li>
+              <li>Structured the game logic clearly to provide a smooth user experience.</li>
+            </ul>
+          </div>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="repo-link">
+            <span>GitHub repository</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Biodiversity Corridor Design -->
+        <article class="project-card-box tilt-card">
+          <div>
+            <h3 class="proj-title">Biodiversity Corridor Design</h3>
+            <div class="proj-tags-mono">C++ • Data Structures</div>
+            <ul class="proj-bullets-list">
+              <li>Problem: Needed a way to plan safe travel routes for endangered animals to help prevent extinction.</li>
+              <li>Designed a simple console-based program in C++ to map out these biodiversity corridors.</li>
+              <li>Used efficient data structures to calculate and design the best possible paths.</li>
+            </ul>
+          </div>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="repo-link">
+            <span>GitHub repository</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+
+        <!-- Intelligent File Compression System -->
+        <article class="project-card-box tilt-card">
+          <div>
+            <h3 class="proj-title">Intelligent File Compression System</h3>
+            <div class="proj-tags-mono">Python • Algorithm</div>
+            <ul class="proj-bullets-list">
+              <li>Problem: Needed to efficiently reduce the size of large files to save storage space.</li>
+              <li>Developed a Python-based system that applies multiple algorithms to compress files.</li>
+              <li>Successfully reduced file sizes quickly and effectively through algorithmic optimization.</li>
+            </ul>
+          </div>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="repo-link">
+            <span>GitHub repository</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        &copy; 2026 Syeda Shafia Haider • Computer Science Student &amp; Software Engineer
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--emerald-mint);">
+        "Turning tricky problems into clean, working software."
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

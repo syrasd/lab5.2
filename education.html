@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education | Syeda Shafia Haider</title>
+  <meta name="description" content="Portfolio of Syeda Shafia Haider - Computer Science Student & Software Engineer. 3D interactive multi-angle studio portfolio." />
+  
+  <!-- Apply saved theme before first paint (no flash between pages) -->
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('shafia_exact_theme')||'dark')}catch(e){}</script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="education">
+
+  <!-- ==================== BACKGROUND ENGINE ==================== -->
+  <div id="bg-stage">
+    <!-- Interactive Three.js depth canvas -->
+    <div id="three-canvas"></div>
+
+    <div class="bg-angles-container">
+      <div class="bg-angle-layer active" data-section="education" style="background-image: url('assets/images/bg-education-right-three-quarter.jpg');"></div>
+    </div>
+
+    <!-- Lateral Scrim -->
+    <div class="bg-gradient-scrim"></div>
+  </div>
+
+  <!-- ==================== CENTERED PILL NAVIGATION ==================== -->
+  <header class="top-navbar-wrapper">
+    <nav class="nav-pill-container" id="nav-pill-container">
+      <a href="index.html" class="nav-item-link" data-target="home">Home</a>
+      <a href="skills.html" class="nav-item-link" data-target="skills">Skills</a>
+      <a href="projects.html" class="nav-item-link" data-target="projects">Projects</a>
+      <a href="education.html" class="nav-item-link active" data-target="education" aria-current="page">Education</a>
+      <a href="contact.html" class="nav-item-link" data-target="contact">Contact</a>
+      
+      <!-- Theme Switcher Button -->
+      <button class="theme-switch-btn" id="theme-switch-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ==================== PAGE CONTENT ==================== -->
+  <main class="content-wrapper">
+
+    <section class="section-stage" id="education">
+      <div class="section-head-wrap">
+        <span class="section-mono-tag">04 / EDUCATION</span>
+        <h2 class="section-display-title">Academic background</h2>
+      </div>
+
+      <div class="edu-grid-layout">
+        <!-- Main BSCS Card -->
+        <div class="degree-card tilt-card">
+          <h3 class="deg-title">Bachelor of Science in Computer Science</h3>
+          <div class="deg-institution">Qarshi University, Lahore</div>
+          <div class="deg-meta">Expected 2028 &nbsp;•&nbsp; CGPA 2.7 / 4.0</div>
+
+          <div class="coursework-wrap">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--emerald-mint); letter-spacing: 0.1em; text-transform: uppercase;">RELEVANT COURSEWORK</div>
+            <div class="coursework-pills">
+              <span class="course-badge">Object-Oriented Programming</span>
+              <span class="course-badge">Data Structures &amp; Algorithms</span>
+              <span class="course-badge">Database Systems</span>
+              <span class="course-badge">Web Development</span>
+              <span class="course-badge">Software Engineering</span>
+              <span class="course-badge">Operating Systems</span>
+              <span class="course-badge">Computer Networks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subgrid: Earlier Ed & Certs -->
+        <div class="edu-subgrid">
+          <div class="tilt-card" style="padding: 1.8rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--emerald-mint); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">EARLIER EDUCATION</div>
+            <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-headline); margin-bottom: 0.25rem;">Intermediate (ICS)</h4>
+            <div style="font-family: var(--font-mono); font-size: 0.88rem; color: var(--text-muted);">Lahore • 2024</div>
+          </div>
+
+          <div class="tilt-card" style="padding: 1.8rem;">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; color: var(--emerald-mint); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem;">CERTIFICATIONS</div>
+            <ul class="cert-list">
+              <li>Google AI Essential Certificate (Coursera)</li>
+              <li>Full Stack Development (Arfa Kareem)</li>
+              <li>Prompt Engineering Certificate (Qarshi University)</li>
+              <li>Google Project Management (Coursera)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div style="font-size: 0.85rem; color: var(--text-muted);">
+        &copy; 2026 Syeda Shafia Haider • Computer Science Student &amp; Software Engineer
+      </div>
+      <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--emerald-mint);">
+        "Turning tricky problems into clean, working software."
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
